@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/4c38b3bc58.js"></script>
+  </head>
+  <body>
+    <section class="banner" id="banner">
+      <header>
+        <a href="#" class="logo-icon">Logo</a>
+        <div id="toggle" onclick="toogle()"></div>
+      </header>
+
+      <div class="content">
+        <h2>
+          Hello World, <br />
+          I'm <span>Karan Soni</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          earum ea voluptate iure amet, vel possimus dignissimos fuga
+          voluptatibus ut non laborum, beatae tempore dolor facilis unde totam
+          consectetur neque.
+        </p>
+        <a href="#">Know More</a>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a href="#"> <span class="fa fa-facebook"></span> </a>
+          <a href="#"> <span class="fa fa-twitter"></span> </a>
+          <a href="#"> <span class="fa fa-linkedin"></span> </a>
+        </li>
+      </ul>
+    </section>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function toogle() {
+        let banner = document.getElementById("banner");
+        let navigation = document.getElementById("navigation");
+        banner.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
